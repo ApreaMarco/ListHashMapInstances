@@ -35,19 +35,18 @@ Questa classe contiene il metodo principale `main` che illustra l'utilizzo delle
 classDiagram
 class ClasseSC {
     -int id
-    -String matricola
-    -Map<Integer, StudenteSC> mappaStudenteSC$
-    -int idClasseSC
-    +StudenteSC(int id,String matricola)
+    -String name
+    -Map<Integer, ClasseSC> mappaClasseSC$
+    -List<Integer> listaIdStudenteSC
+    +ClasseSC(int id,String name)
     +int getId()
     +void setId(int id)
-    +String getMatricola()
-    +void setMatricola(String matricola)
+    +String getName()
+    +void setName(String name)
     +String toString()
-    +int getIdClasseSC()
-    +void setIdClasseSC(int idClasseSC)
-    +StudenteSC getStudenteSCbyID(int id)$
-    +void removeStudenteSCById(int id)$
+    +ClasseSC getClasseSCbyId(int id)$
+    +void removeClasseSCById(int id)$
+    +void addStudenteSCId(int idStudenteSC)
 }
 ClasseSC "1" o-- "N" ClasseSC : mappaClasseSC
 ```
