@@ -1,0 +1,13 @@
+@startuml
+
+skinparam svgLinkTarget _parent
+skinparam linetype ortho
+set namespaceSeparator none
+class "<b><size:14>ListHashMapInstances</b>\n<size:10>it.edu.marconiverona.listhashmapinstances" as it.edu.marconiverona.listhashmapinstances.ListHashMapInstances  [[../../../../it/edu/marconiverona/listhashmapinstances/ListHashMapInstances.html{it.edu.marconiverona.listhashmapinstances.ListHashMapInstances}]] {
++ListHashMapInstances()
+{static} +void main(String args)
+}
+
+
+
+@enduml

@@ -1,0 +1,28 @@
+@startuml
+
+skinparam svgLinkTarget _parent
+skinparam linetype ortho
+set namespaceSeparator none
+class "<b><size:14>StudenteSC</b>\n<size:10>it.edu.marconiverona.listhashmapinstances" as it.edu.marconiverona.listhashmapinstances.StudenteSC  [[../../../../it/edu/marconiverona/listhashmapinstances/StudenteSC.html{it.edu.marconiverona.listhashmapinstances.StudenteSC}]] {
+-int id
+-String matricola
+{static} -Map<Integer, StudenteSC> mappaStudenteSC
+-int idClasseSC
++StudenteSC(int id,String matricola)
++int getId()
++void setId(int id)
++String getMatricola()
++void setMatricola(String matricola)
++String toString()
++int getIdClasseSC()
++void setIdClasseSC(int idClasseSC)
+{static} +StudenteSC getStudenteSCbyID(int id)
+{static} +void removeStudenteSCById(int id)
+}
+
+
+
+it.edu.marconiverona.listhashmapinstances.StudenteSC "1" o-d- "N" it.edu.marconiverona.listhashmapinstances.StudenteSC: "mappaStudenteSC"
+
+
+@enduml

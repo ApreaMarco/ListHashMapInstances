@@ -1,0 +1,29 @@
+@startuml
+
+skinparam svgLinkTarget _parent
+skinparam linetype ortho
+package it.edu.marconiverona.listhashmapinstances [[../../../../it/edu/marconiverona/listhashmapinstances/package-summary.html{it.edu.marconiverona.listhashmapinstances}]] {
+}
+
+class "<b><size:14>ClasseSC</b>" as it.edu.marconiverona.listhashmapinstances.ClasseSC  [[../../../../it/edu/marconiverona/listhashmapinstances/ClasseSC.html{it.edu.marconiverona.listhashmapinstances.ClasseSC}]] {
+}
+
+hide it.edu.marconiverona.listhashmapinstances.ClasseSC fields
+hide it.edu.marconiverona.listhashmapinstances.ClasseSC methods
+
+class "<b><size:14>StudenteSC</b>" as it.edu.marconiverona.listhashmapinstances.StudenteSC  [[../../../../it/edu/marconiverona/listhashmapinstances/StudenteSC.html{it.edu.marconiverona.listhashmapinstances.StudenteSC}]] {
+}
+
+hide it.edu.marconiverona.listhashmapinstances.StudenteSC fields
+hide it.edu.marconiverona.listhashmapinstances.StudenteSC methods
+
+class "<b><size:14>ListHashMapInstances</b>" as it.edu.marconiverona.listhashmapinstances.ListHashMapInstances  [[../../../../it/edu/marconiverona/listhashmapinstances/ListHashMapInstances.html{it.edu.marconiverona.listhashmapinstances.ListHashMapInstances}]] {
+}
+
+hide it.edu.marconiverona.listhashmapinstances.ListHashMapInstances fields
+hide it.edu.marconiverona.listhashmapinstances.ListHashMapInstances methods
+
+it.edu.marconiverona.listhashmapinstances.ClasseSC "1" o-d- "N" it.edu.marconiverona.listhashmapinstances.ClasseSC: "mappaClasseSC"
+it.edu.marconiverona.listhashmapinstances.StudenteSC "1" o-d- "N" it.edu.marconiverona.listhashmapinstances.StudenteSC: "mappaStudenteSC"
+
+@enduml
