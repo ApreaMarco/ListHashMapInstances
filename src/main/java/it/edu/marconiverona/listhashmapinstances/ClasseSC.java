@@ -69,7 +69,7 @@ public class ClasseSC {
      */
     @Override
     public String toString() {
-        // Recupero le istanze di ScuolaSC collegate a ClasseSC, usando le chiavi primarie -> JOIN
+        // Recupero le istanze di StudenteSC collegate a ClasseSC, usando le chiavi primarie -> JOIN
         // Sarebbe più elegante ed efficiente usare uno StringBuilder
         String toStringStudentSC = "[\n";
         for (Integer studentId : listaIdStudenteSC) {
