@@ -36,8 +36,8 @@ classDiagram
 class ClasseSC {
     -int id
     -String name
-    -Map<Integer, ClasseSC> mappaClasseSC$
-    -List<Integer> listaIdStudenteSC
+    -Map~Integer, ClasseSC~ mappaClasseSC$
+    -List~Integer~ listaIdStudenteSC
     +ClasseSC(int id,String name)
     +int getId()
     +void setId(int id)
@@ -64,7 +64,7 @@ classDiagram
 class StudenteSC {
     -int id
     -String matricola
-    -Map<Integer, StudenteSC> mappaStudenteSC$
+    -Map~Integer, StudenteSC~ mappaStudenteSC$
     -int idClasseSC
     +StudenteSC(int id,String matricola)
     +int getId()
